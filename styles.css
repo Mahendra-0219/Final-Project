@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+h1 {
+  /* margin-top: 30px; */
+  font-size: 2.5rem;
+}
+
+#camera-container {
+  position: relative;
+  height: 440px;
+  width: 100%;
+  background-color: rgb(4, 65, 114);
+}
+
+#video {
+  width: 50%;
+  height: 440px;
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 470px;
+  box-shadow: inset;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 25%;
+  width: 50%;
+  height: 440px;
+  z-index: 100;
+}
+.Detection-heading {
+  position: relative;
+  top: -430px;
+  border: none;
+  color: white;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+  animation: blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+#start-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(4, 65, 114);
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+footer{
+    margin-top: 20px;
+    height: 40px;
+    font-size: 12px;
+    width: 100%;
+    color: rgba(240, 248, 255, 0.86);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(4, 64, 114, 0.69);
+}
+
+/* Styles for navbar */
+.driver-logo {
+  margin-left: 20px;
+  cursor: pointer;
+  height: 70px;
+  width: 170px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(4, 64, 114, 0.69);
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(3, 55, 97, 0.878);
+  border-radius: 5px;
+}
+li {
+  list-style-type: none;
+}
+.user-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: brown;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-icon:hover {
+  place-content: log out;
+}
+.log-sign-btn {
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  background-color: rgb(4, 65, 114);
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 40px;
+  padding: 6px 18px 6px 18px;
+  cursor: pointer;
+}
+.log-sign-btn:hover {
+  background-color: rgba(3, 55, 97, 0.878);
+}
+.signup-form {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+  background-color: rgb(4, 65, 114);
+}
+input {
+  background-color: transparent;
+  padding: 5px;
+  margin: 10px;
+}
+.content {
+  margin-top: -30px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.559);
+  background-image: url(./assets/abstract-modern-polygonal-geometric-background-vector.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 95%;
+  background-blend-mode: overlay;
+  padding: 0px 0px 50px 400px;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.content h1 {
+  color: rgb(7, 167, 207);
+  opacity: 100;
+  padding-top: 50px;
+}
+.content li {
+  opacity: 100;
+  padding: 5px;
+  font-size: 18px;
+  list-style: decimal;
+  text-align: left;
+}
+.content p {
+  opacity: 100;
+  text-align: left;
+  font-size: 20px;
+  width: 70%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.download-reports{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(9, 174, 189);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.download-btn{
+    text-decoration: none;
+    color: rgb(4, 8, 18);
+    font-weight: bolder;
+    animation: blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: blink-animation 1s steps(2, start) infinite;
+}
+.download-btn:hover{
+    animation: blink-animation 0s steps(2, start) infinite;
+  -webkit-animation: blink-animation 0s steps(2, start) infinite;
+}

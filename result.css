@@ -1,0 +1,49 @@
+/* Styles for result page */
+body {
+  /* text-align: center; */
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+/* Additional styles for result page */
+#result-container {
+  margin-top: 10%;
+}
+
+#result-message {
+  font-size: 100px;
+  color: rgb(144, 5, 42);
+  animation: blink-animation 0.1s steps(2, start) infinite;
+  -webkit-animation: blink-animation 0.1s steps(2, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+#result-canvas {
+  margin-top: 20px;
+}
+
+#result-link {
+  margin-left: 50%;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: rgb(144, 5, 42);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  /* color: #4CAF50; */
+}

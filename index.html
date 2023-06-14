@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Driver Drowsiness Detection</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="/index.html"><img src="./assets/logo-driver.png" alt="Driver Safety Logo" class="driver-logo"></a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="consciousness.html">Driver's Consciousness</a></li>
+            <li class="nav-item"><a class="nav-link" href="accident-reports.html">Accident Reports</a></li>
+            <li class="nav-item"><a class="nav-link" href="security-measures.html">Security Measures</a></li>
+            <li class="nav-item"><a class="nav-link" href="emergency-contacts.html">Emergency Contacts</a></li>
+            <li class="nav-item"><a class="log-sign-btn" href="login.html">Login</a></li>
+            <li class="nav-item"><a class="log-sign-btn" href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <h1>Driver Drowsiness Detection System</h1>
+    <div id="camera-container">
+        <video id="video" autoplay></video>
+        <h2 class="Detection-heading">Detection goes here...</h2>
+        <canvas id="canvas"></canvas>
+    </div>
+    <button id="start-btn" onclick="startDetection()">Start Detection</button>
+    <audio id="beep" src="beep.mp3" preload="auto"></audio>
+    <footer class="footer">All Rights Reserved - Dr.V.Sujay & Team</footer>
+</body>
+</html>
